@@ -1,0 +1,41 @@
+version: 2
+
+sources:
+  - name: vpb_user
+    database: postgres  
+    schema: vpb_user
+    tables:
+      - name: account
+        description: Một dòng là thông tin tiểu khoản của khách hàng
+        columns:
+          - name: account_number
+            description: Số tài khoản của khách hàng
+            tests:
+              - not_null
+              - unique
+            meta:
+              sensitive: true
+          - name: pin
+            description: mã pin của tài khoản
+            tests:
+              - not_null
+            meta:
+              sensitive: true
+      - name: customer
+        description: Một dòng là thông tin một khách hàng
+        columns:
+          - name: identity_id
+            description: Mã
+            tests:
+              - not_null
+              - unique
+            meta:
+              sensitive: true
+          - name: email
+            description: Email của Khách hàng
+            meta:
+              sensitive: true
+          - name: phone
+            description: Số điện thoại của khách hàng
+            meta:
+              sensitive: true

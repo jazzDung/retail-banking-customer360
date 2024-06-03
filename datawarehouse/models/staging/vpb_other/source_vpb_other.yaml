@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: vpb_other
+    database: postgres  
+    schema: vpb_other  
+    tables:
+      - name: customers_nav_daily
+        description: ''

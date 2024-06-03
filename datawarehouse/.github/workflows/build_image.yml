@@ -1,0 +1,56 @@
+name: Build and push
+
+on: workflow_dispatch
+
+# on:
+#   push:
+#     branches: [ "main" ]
+#   pull_request:
+#     branches: [ "main" ]
+
+
+
+jobs:
+  build_and_push: 
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+    - name: Checkout
+      id: checkout
+      uses: actions/checkout@v4
+
+    - name: Configure AWS credentials
+      id: configure-aws-credentials
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-1
+
+    - name: Login to ECR
+      id: login-ecr
+      uses: aws-actions/amazon-ecr-login@v2
+
+    - name: Build Docker Image
+      id: build-image
+      env:  
+        ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+        ECR_REPOSITORY: dbt-redshift-base
+        IMAGE_TAG: latest
+      run: docker build 
+            --build-arg DBT_DEV_HOST=${{ secrets.DBT_DEV_HOST }}
+            --build-arg DBT_DEV_DB_NAME=${{ secrets.DBT_DEV_DB_NAME }}
+            --build-arg DBT_DEV_PASSWORD=${{ secrets.DBT_DEV_PASSWORD }}
+            --build-arg DBT_DEV_PORT=${{ secrets.DBT_DEV_PORT }}
+            --build-arg DBT_DEV_SCHEMA=${{ secrets.DBT_DEV_SCHEMA }}
+            --build-arg DBT_DEV_USER=${{ secrets.DBT_DEV_USER }}
+            -t "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" .
+
+    - name: Push to ECR
+      id: push-to-ecr
+      env: 
+        ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+        ECR_REPOSITORY: dbt-redshift-base
+        IMAGE_TAG: latest
+      run: docker push "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
+

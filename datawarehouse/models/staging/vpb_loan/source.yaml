@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: vpb_loan
+    database: postgres  
+    schema: vpb_loan  
+    tables:
+      - name: loan
+        description: ''
+      - name: loan_payment
+        description: ''

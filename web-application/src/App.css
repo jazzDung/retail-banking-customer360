@@ -1,0 +1,66 @@
+.list {
+  text-align: left;
+  max-width: 750px;
+  margin: auto;
+}
+
+.submit-form {
+  max-width: 300px;
+  margin: auto;
+}
+
+.edit-form {
+  max-width: 300px;
+  margin: auto;
+}
+
+.json-viewer {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 4px;
+  overflow: auto;
+}
+
+.json-list {
+  list-style-type: none;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.json-item {
+  margin: 2px 0;
+}
+
+.json-toggle {
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.json-key {
+  color: #a71d5d;
+}
+
+.json-value {
+  color: #183691;
+}
+
+.json-viewer {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 4px;
+  white-space: pre;
+}
+
+.json-key {
+  color: #a71d5d;
+}
+
+.json-value {
+  color: #183691;
+}
+
+.json-brace {
+  color: #000;
+}

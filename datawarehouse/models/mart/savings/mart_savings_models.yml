@@ -1,0 +1,10 @@
+version: 2
+models:
+  - name: fact_savings_accounts
+    description: Một dòng là một khoản gửi tiết kiệm của khách hàng
+    columns:
+      - name: savings_id
+        description: mã khoản gửi tiết kiệm
+        tests:
+          - not_null
+          - unique

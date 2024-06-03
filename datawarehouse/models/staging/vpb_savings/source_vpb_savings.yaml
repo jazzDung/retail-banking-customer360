@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: vpb_savings
+    database: postgres  
+    schema: vpb_savings  
+    tables:
+      - name: savings_product
+        description: ''
+      - name: savings_account
+        description: Một dòng là khoản gửi tiết kiệm mà khách hàng đã gửi
+        columns:
+          - name: account_number
+            description: Số tài khoản của khách hàng
+            tests:
+              - not_null
+              - unique
+            meta:
+              sensitive: true
+
+      - name: savings_account_transaction
+        description: ''

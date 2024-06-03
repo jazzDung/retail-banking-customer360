@@ -1,0 +1,22 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: basic-cluster
+  region: us-east-1
+
+availabilityZones: ["us-east-1b"]
+
+nodeGroups:
+  - name: my-node-group
+    instanceType: t2.large
+    desiredCapacity: 3
+    volumeSize: 80
+    ssh:
+      allow: true # will use ~/.ssh/id_rsa.pub as the default ssh key
+
+
+vpc:
+  clusterEndpoints:
+    publicAccess:  true
+    privateAccess: true

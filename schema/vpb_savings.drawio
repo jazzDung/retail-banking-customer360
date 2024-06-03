@@ -1,0 +1,15 @@
+<mxGraphModel dx="0" dy="0" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="none" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="node2" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;savings_account&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; savings_account_id: text&lt;br/&gt; product_id: text&lt;br/&gt; customer_id: text&lt;br/&gt; account_number: text&lt;br/&gt; deposit_amount: text&lt;br/&gt; opening_date: date&lt;br/&gt; maturity_date: date&lt;br/&gt; status: text&lt;br/&gt; created_at: timestamp&lt;br/&gt; updated_at: text&lt;br/&gt; seller_id: text&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="-214" y="59" width="195" height="303" as="geometry" />
+    </mxCell>
+    <mxCell id="node0" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;savings_account_transaction&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; transaction_id: text&lt;br/&gt; savings_account_id: text&lt;br/&gt; transaction_date: date&lt;br/&gt; transaction_type: text&lt;br/&gt; transaction_amount: double precision&lt;br/&gt; balance_after: double precision&lt;br/&gt; created_at: timestamp&lt;br/&gt; updated_at: timestamp&lt;br/&gt; description: text&lt;br/&gt; teller_id: text&lt;br/&gt; channel: text&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="11" y="59" width="276" height="303" as="geometry" />
+    </mxCell>
+    <mxCell id="node1" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;savings_product&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; product_id: text&lt;br/&gt; product_name: text&lt;br/&gt; min_term: bigint&lt;br/&gt; max_term: bigint&lt;br/&gt; interest_rate: double precision&lt;br/&gt; min_deposit: bigint&lt;br/&gt; deposit_method: text&lt;br/&gt; interest_payment: text&lt;br/&gt; promotion: text&lt;br/&gt; created_at: date&lt;br/&gt; updated_at: text&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="-107" y="393" width="227" height="303" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>

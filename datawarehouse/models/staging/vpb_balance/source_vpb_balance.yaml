@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: vpb_balance
+    database: postgres  
+    schema: vpb_balance  
+    tables:
+      - name: transaction
+        description: ''

@@ -1,0 +1,34 @@
+name: dbt_run_model
+
+on: workflow_dispatch
+
+# on:
+#   push:
+#     branches: [ "main" ]
+#   pull_request:
+#     branches: [ "main" ]
+
+
+
+jobs:
+  dbt_run_model: 
+    runs-on: ubuntu-latest
+    environment: production
+    env:
+      DBT_DEV_HOST: ${{ secrets.DBT_DEV_HOST }}
+      DBT_DEV_DB_NAME: ${{ secrets.DBT_DEV_DB_NAME }}
+      DBT_DEV_PASSWORD: ${{ secrets.DBT_DEV_PASSWORD }}
+      DBT_DEV_PORT: ${{ secrets.DBT_DEV_PORT }}
+      DBT_DEV_SCHEMA: ${{ secrets.DBT_DEV_SCHEMA }}
+      DBT_DEV_USER: ${{ secrets.DBT_DEV_USER }}
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v4
+      with:
+        python-version: 3.9
+        cache: 'pip'
+    - name: Install requirements
+      run: pip install -r requirements.txt
+    - name: Run designated model
+      run: dbt run -m ${{ vars.DBT_MODEL }} --profiles-dir .config --project-dir .
+

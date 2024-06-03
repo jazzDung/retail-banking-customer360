@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: fact_customers
+    description: Một dòng là 1 KH duy nhất và thông tin cập nhật nhất về khách hàng đó
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - unique

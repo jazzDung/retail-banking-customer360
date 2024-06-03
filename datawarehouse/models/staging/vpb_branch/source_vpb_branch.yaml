@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: vpb_branch
+    database: postgres  
+    schema: vpb_branch  
+    tables:
+      - name: atm
+        description: ''
+      - name: branch
+        description: ''

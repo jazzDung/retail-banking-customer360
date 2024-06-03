@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: fact_loans
+    description: ''
+    columns:
+      - name: loan_id
+        tests:
+          - not_null
+          - unique
+      - name: customer_id
+        tests:
+          - not_null
+          - unique

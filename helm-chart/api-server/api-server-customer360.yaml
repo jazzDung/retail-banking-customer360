@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-server-customer360
+  namespace: api-server
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: api-server-customer360
+  template:
+    metadata:
+      labels:
+        app: api-server-customer360
+    spec:
+      terminationGracePeriodSeconds: 60
+      containers:
+        - name: nginx
+          image: public.ecr.aws/a5t8q4h4/api-server-customer360:latest
+          imagePullPolicy: "Always"
+          ports:
+            - name: tcp
+              containerPort: 8000

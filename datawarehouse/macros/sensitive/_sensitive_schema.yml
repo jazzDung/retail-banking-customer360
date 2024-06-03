@@ -1,0 +1,12 @@
+version: 2
+
+macros:
+  - name: sensitive_columns
+    docs:
+      show: false
+  - name: get_meta_columns
+    docs:
+      show: false
+  - name: hash_of_column
+    docs:
+      show: false

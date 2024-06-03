@@ -1,0 +1,12 @@
+<mxGraphModel dx="0" dy="0" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="none" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="node0" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;account&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; account_id: text&lt;br/&gt; customer_id: text&lt;br/&gt; account_number: bigint&lt;br/&gt; account_type: text&lt;br/&gt; pin: bigint&lt;br/&gt; cvv: bigint&lt;br/&gt; date_opened: date&lt;br/&gt; date_closed: text&lt;br/&gt; account_status: text&lt;br/&gt; branch: text&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="102" y="125" width="185" height="279" as="geometry" />
+    </mxCell>
+    <mxCell id="node1" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;customer&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; customer_id: text&lt;br/&gt; identity_id: bigint&lt;br/&gt; last_name: text&lt;br/&gt; first_name: text&lt;br/&gt; date_of_birth: date&lt;br/&gt; age: bigint&lt;br/&gt; gender: text&lt;br/&gt; address: text&lt;br/&gt; status: text&lt;br/&gt; hometown: text&lt;br/&gt; phone: text&lt;br/&gt; email: text&lt;br/&gt; register_date: date&lt;br/&gt; customer_type: text&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="-92" y="125" width="161" height="375" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>
