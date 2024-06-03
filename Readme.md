@@ -1,19 +1,20 @@
 ## What is this? 
-Okay, so this is our proposed and implemented solution for the VPBank Technology Hackathon 2024 competition, participate in challenge "Customer 360"
+Okay, so this is our proposed and implemented solution for the VPBank Technology Hackathon 2024 competition, participate in the challenge "Customer 360"
 
 ## Did you win it?
 Sadly, no, but we (Team 101) did make it to the top 18 participants, with the announcement right [HERE](https://www.linkedin.com/posts/vpbank_vpbank-homeoftalents-activity-7201777548886695937-R0mL/)
 
-## So how does it look like?
-Here are the overview of the architecture
-![Customer 360 - Architecture Diagram](Cerebro - Architecture Diagram (1).png)
+## So what does it look like?
+Here is the overview of the architecture
+![Customer 360 - Detailed Architecture](https://raw.githubusercontent.com/jazzDung/retail-banking-customer360/main/figures/architecture/Detailed.png)
 
-Or maybe an simplified one
-![Customer 360 - Abstracted Diagram](Cerebro - Architecture Diagram (1).png)
 
-## My personal contribution
- 1. Leader of a 4-member team (2 Data Analysts and 1 Full-stack devloper) developing a working solution within 24 days.
- 2. Designed, deployed and maintained the entire solution's architecture (AWS and Kubernetes), including:
+Or maybe a simplified one
+![Customer 360 - Abstracted Architecture](https://raw.githubusercontent.com/jazzDung/retail-banking-customer360/main/figures/architecture/Abstracted.jpg)
+
+## My contribution
+ 1. Leader of a 4-member team (2 Data Analysts and 1 Full-stack developer) developing a working solution within 24 days.
+ 2. Designed, deployed, and maintained the entire solution's architecture (AWS and Kubernetes), including:
     - Data sources (S3 buckets, External Databases, External APIs, Kafka streams)
     - AWS Glue (Jobs and crawlers)
     - Relational database (PostgreSQL) and Graph database (Neo4j)
@@ -34,4 +35,4 @@ Or maybe an simplified one
 - helm-chart: Helm chart for all deployment and services on k8s
 - schema: Data Warehouse schema
 - figures: Screenshots throughout stages of solution
-- documentation: Proposal, Technical documentation and presentation slide
+- documentation: Proposal, Technical documentation, and presentation slide
