@@ -6,11 +6,11 @@ Sadly, no, but we (Team 101) did make it to the top 18 participants, with the an
 
 ## My contribution
  1. Leader of a 4-member team (2 Data Analysts and 1 Full-stack developer) developing a working solution within 24 days.
- 2. Designed, deployed, and maintained the entire solution's architecture (AWS and Kubernetes), including:
+ 2. Design, configured, deployed, and maintained the entire solution's architecture (AWS and Kubernetes), including:
     - Data sources (S3 buckets, External Databases, External APIs, Kafka streams)
     - AWS Glue (Jobs and crawlers)
     - Relational database (PostgreSQL) and Graph database (Neo4j)
-    - Airflow, dbt docs, API server, Superset, Web application (All on Kubernetes cluster managed by EKS)
+    - Airflow, dbt docs, API server (Deploy only), Superset, Web application (Deploy only) (All on Kubernetes cluster managed by EKS)
     - CI/CD workflow (With GitHub Actions, ECR, GitSync)
  3. Implemented all Spark and non-SQL transformations to integrate raw data into databases.
  4. Provided detailed, service-specific cost and setup time estimation for retail banking usage.
