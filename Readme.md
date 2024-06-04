@@ -14,6 +14,7 @@ Sadly, no, but we (Team 101) did make it to the top 18 participants, with the an
     - CI/CD workflow (With GitHub Actions, ECR, GitSync)
  3. Implemented all Spark and non-SQL transformations to integrate raw data into databases.
  4. Provided detailed, service-specific cost and setup time estimation for retail banking usage.
+ 5. Designed a cute, little PowerPoint presentation, I was also the presenter of the group during the Final round
 
 ## So what does it look like?
 Here is the overview of the architecture
