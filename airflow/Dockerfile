@@ -31,7 +31,7 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/*
 
 USER airflow
+RUN pip install -r requirements.txt
 
 EXPOSE 8080
 EXPOSE 8081
-RUN pip install -r requirements.txt
