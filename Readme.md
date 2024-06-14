@@ -6,13 +6,13 @@ Sadly, no, but we (Team 101) did make it to the top 18 participants, with the an
 
 
 ## Used Technology
-- Data source simulation: RDS, MSK, S3
-- Data Integration: AWS Glue, Spark
-- Data Warehouse: RDS, PostgreSQL, Neo4j
-- Analytics & Visualization: dbt, Airflow, Superset
-- API Server: Python, Django
-- Web Application: ReactJS
-- Deployment: ECR, EKS, Kubernetes
+1. Data source simulation: RDS, MSK, S3
+2. Data Integration: AWS Glue, Spark
+3. Data Warehouse: RDS, PostgreSQL, Neo4j
+4. Analytics & Visualization: dbt, Airflow, Superset
+5. API Server: Python, Django
+6. Web Application: ReactJS
+7. Deployment: ECR, EKS, Kubernetes
 
 ## My contribution
  1. Leader of a 4-member team (2 Data Analysts and 1 Full-stack developer) developing a working solution within 24 days.
@@ -36,14 +36,14 @@ Or maybe a simplified one
 
 
 ## Folders
-- airflow: Airflow dags and Dockerfile to build custom image
-- api-server: API server code
-- web-app: Web application code
-- datawarehouse: dbt project
-- demo-video: Self-explanatory
-- eks-cluster-setup: EKS cluster setup script
-- glue-script: Glue data integration scripts
-- helm-chart: Helm chart for all deployment and services on k8s
-- schema: Data Warehouse schema
-- figures: Screenshots throughout stages of solution
-- documentation: Proposal, Technical documentation, and presentation slide
+1. _airflow_: Airflow dags and Dockerfile to build custom image
+2. _api-server_: API server code
+3. _web-app_: Web application code
+4. _datawarehouse_: dbt project
+5. _demo-video_: Self-explanatory
+6. _eks-cluster-setup_: EKS cluster setup script
+7. _glue-script_: Glue data integration scripts
+8. _helm-chart_: Helm chart for all deployment and services on k8s
+9. _schema_: Data Warehouse schema
+10. _figures_: Screenshots throughout stages of solution
+11. _documentation_: Proposal, Technical documentation, and presentation slide
