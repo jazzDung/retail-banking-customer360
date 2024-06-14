@@ -4,6 +4,16 @@ Okay, so this is our proposed and implemented solution for the VPBank Technology
 ## Did you win it?
 Sadly, no, but we (Team 101) did make it to the top 18 participants, with the announcement right [HERE](https://www.linkedin.com/posts/vpbank_vpbank-homeoftalents-activity-7201777548886695937-R0mL/)
 
+
+## Used Technology
+- Data source simulation: RDS, MSK, S3
+- Data Integration: AWS Glue, Spark
+- Data Warehouse: RDS, PostgreSQL, Neo4j
+- Analytics & Visualization: dbt, Airflow, Superset
+- API Server: Python, Django
+- Web Application: ReactJS
+- Deployment: ECR, EKS, Kubernetes
+
 ## My contribution
  1. Leader of a 4-member team (2 Data Analysts and 1 Full-stack developer) developing a working solution within 24 days.
  2. Design, configured, deployed, and maintained the entire solution's architecture (AWS and Kubernetes), including:
